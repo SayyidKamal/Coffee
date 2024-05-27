@@ -15,7 +15,7 @@ class CofeeContainer3 extends StatefulWidget {
 class _CofeeContainer3State extends State<CofeeContainer3> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout.builder(
+    return ScreenTypeLayout(
       mobile: MobileContainer3(),
       desktop: DesktopContainer3(),
     );
