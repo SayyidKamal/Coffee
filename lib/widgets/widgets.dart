@@ -54,7 +54,7 @@ class CommonWidgets {
           debugPrint('Card tapped.');
         },
         child: SizedBox(
-          width: 350,
+          width: w! / 4.7,
           height: 180,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -97,10 +97,11 @@ class CommonWidgets {
 
   static Widget Header(String header, String subHeader) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           header,
-          textAlign: TextAlign.center,
           style: TextStyle(
               color: Colors.white,
               fontSize: w! / 40,
@@ -112,7 +113,6 @@ class CommonWidgets {
         ),
         Text(
           subHeader,
-          textAlign: TextAlign.center,
           style: const TextStyle(
             color: Colors.white,
             fontSize: 13,

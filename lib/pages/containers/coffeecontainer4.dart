@@ -45,23 +45,25 @@ class _CofeeContainer4State extends State<CofeeContainer4> {
       padding: EdgeInsets.symmetric(horizontal: w! / 30, vertical: 30),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CommonWidgets.Header("Contact us", "Send us a message"),
               SizedBox(
-                  width: 350,
+                  width: w! / 5,
                   child: CommonWidgets.textField(
                       "Full name", _controllerFullName, 1, 1, context)),
               SizedBox(height: 20),
               SizedBox(
-                  width: 350,
+                  width: w! / 5,
                   child: CommonWidgets.textField(
                       "Your Email", _controllerEmail, 1, 1, context)),
               SizedBox(height: 20),
               SizedBox(
-                  width: 350,
+                  width: w! / 4,
                   child: CommonWidgets.textField(
                       "Message", _controllerMessage, 3, 5, context)),
               SizedBox(height: 20),
@@ -72,23 +74,19 @@ class _CofeeContainer4State extends State<CofeeContainer4> {
             ],
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CommonWidgets.Header("Sitemap", "All our pages"),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  CommonWidgets.bodyText("- Home"),
-                  SizedBox(height: 6),
-                  CommonWidgets.bodyText("- About Us"),
-                  SizedBox(height: 6),
-                  CommonWidgets.bodyText("- Feature"),
-                  SizedBox(height: 6),
-                  CommonWidgets.bodyText("- Pricing"),
-                  SizedBox(height: 6),
-                  CommonWidgets.bodyText("- Contact us"),
-                ],
-              ),
+              CommonWidgets.bodyText("- Home"),
+              SizedBox(height: 6),
+              CommonWidgets.bodyText("- About Us"),
+              SizedBox(height: 6),
+              CommonWidgets.bodyText("- Feature"),
+              SizedBox(height: 6),
+              CommonWidgets.bodyText("- Pricing"),
+              SizedBox(height: 6),
+              CommonWidgets.bodyText("- Contact us"),
             ],
           ),
           const Column(

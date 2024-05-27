@@ -15,7 +15,7 @@ class CofeeContainer3 extends StatefulWidget {
 class _CofeeContainer3State extends State<CofeeContainer3> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
+    return ScreenTypeLayout.builder(
       mobile: MobileContainer3(),
       desktop: DesktopContainer3(),
     );
@@ -65,7 +65,7 @@ class _CofeeContainer3State extends State<CofeeContainer3> {
             height: 15,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 70.0),
+            padding: const EdgeInsets.symmetric(horizontal: 60.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -73,7 +73,7 @@ class _CofeeContainer3State extends State<CofeeContainer3> {
                     "The best coffee ever don't let anyone tell you otherwise",
                     "kamal"),
                 CommonWidgets.primaryCard(
-                    "Its bold aroma and robust flavor transported me to a cozy café in Italy, even as I savored it in the comfort of my own home.",
+                    "Its bold aroma and robust flavor transported me to a cozy café in Italy.",
                     "Moh"),
                 CommonWidgets.primaryCard(
                     " Each cup is like a warm hug, infusing me with energy and joy.",
